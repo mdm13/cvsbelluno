@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="dovesiamo.html">Orari</a>
+              <a class="nav-link" href="dovesiamo.html">Dove Siamo</a>
             </li>
            
           </ul>
@@ -49,46 +49,7 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 main-title">
-            <h1 class="mt-5">Cooperativa Veneta Scout</h1>
-            <p> Punto di Distribuzione Zona Belluno<br/>
-               presso lo <a href=" https://www.spazioex.com/">Spazio EX – Ex Caserma Piave</a><br/>
-              Via Tiziano Vecellio, 82/E<br/>
-              ​32100 ​Belluno (BL)<br/>
-              <p class="font-italic">​di fronte a Kiwisport </p></p>
-            <p> Aperto il sabato dalle 15:00 alle 18:00</p>
-            <p> Prossime aperture:</p>
-            <table class="table table-striped table-dark">
-              <thead>
-                <tr>
-                  <th scope="col">Data</th>
-                  <th scope="col">Orario</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>29 dicembre 2018</td>
-                  <td class="bg-danger">Chiuso</td>
-                </tr>
-                <tr>
-                  <td>5 gennaio 2018</td>
-                  <td>15:00-18:00</td>
-                </tr>
-                <tr>
-                  <td>12 gennaio 2018</td>
-                  <td class="bg-warning">(speciale) 16:00-19:00 </td>
-                </tr>
-                <tr>
-                  <td>19 gennaio 2018</td>
-                  <td>15:00-18:00</td>
-                </tr>
-                <tr>
-                  <td>26 gennaio 2018</td>
-                  <td>15:00-18:00</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <div id="map"></div>
         </div>
       </div>
     </section>
@@ -98,8 +59,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  
-
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var cvs = {lat: 46.160796, lng: 12.239910};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 11, center: cvs});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: cvs, map: map});
+        }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzjPkh-Cfv1BrLIbqsOe_f3pbSsZuZ9U8&callback=initMap">
+    </script>
   </body>
-
 </html>
