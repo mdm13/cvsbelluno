@@ -1,8 +1,12 @@
 
 body {
-  background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+  background: url('../img/esterno_cvs.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.main-title {
+  color: #92a8d1;
 }
