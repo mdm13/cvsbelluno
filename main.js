@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = " <!-- Navigation -->\n <nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"http://www.cvsonline.it/\">Cooperativa Veneta Scout</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    \n    <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/home\" routerLinkActive=\"active\">Home\n            <span class=\"sr-only\">(current)</span>\n          </a>\n        </li>\n        \n        <li class=\"nav-item\">\n            <a class=\"nav-link\" routerLink=\"/dovesiamo\" routerLinkActive=\"active\">Dove Siamo</a>\n          </li>\n         \n      </ul>\n    </div>\n  </div>\n</nav>\n\n\n<!-- Page Content -->\n<router-outlet></router-outlet>\n\n"
+module.exports = "<!-- Navigation -->\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"http://www.cvsonline.it/\">Cooperativa Veneta Scout</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\"\n      aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/home\" routerLinkActive=\"active\">Home\n            <span class=\"sr-only\">(current)</span>\n          </a>\n        </li>\n\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/dovesiamo\" routerLinkActive=\"active\">Dove Siamo</a>\n        </li>\n\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/articoli\" routerLinkActive=\"active\">Articoli</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n\n\n<!-- Page Content -->\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -92,14 +92,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _dovesiamo_dovesiamo_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./dovesiamo/dovesiamo.component */ "./src/app/dovesiamo/dovesiamo.component.ts");
-/* harmony import */ var _articoli_articoli_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./articoli/articoli.component */ "./src/app/articoli/articoli.component.ts");
-/* harmony import */ var _page_not_found_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./page-not-found.component */ "./src/app/page-not-found.component.ts");
-/* harmony import */ var _app_routes__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app.routes */ "./src/app/app.routes.ts");
-/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
-/* harmony import */ var _services_orari_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./services/orari.service */ "./src/app/services/orari.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _dovesiamo_dovesiamo_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dovesiamo/dovesiamo.component */ "./src/app/dovesiamo/dovesiamo.component.ts");
+/* harmony import */ var _articoli_articoli_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./articoli/articoli.component */ "./src/app/articoli/articoli.component.ts");
+/* harmony import */ var _page_not_found_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./page-not-found.component */ "./src/app/page-not-found.component.ts");
+/* harmony import */ var _app_routes__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app.routes */ "./src/app/app.routes.ts");
+/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
+/* harmony import */ var _services_orari_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/orari.service */ "./src/app/services/orari.service.ts");
+/* harmony import */ var _services_articoli_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./services/articoli.service */ "./src/app/services/articoli.service.ts");
+
 
 
 
@@ -115,28 +118,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
-                _page_not_found_component__WEBPACK_IMPORTED_MODULE_9__["PageNotFoundComponent"],
-                _dovesiamo_dovesiamo_component__WEBPACK_IMPORTED_MODULE_7__["DovesiamoComponent"],
-                _articoli_articoli_component__WEBPACK_IMPORTED_MODULE_8__["ArticoliComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
+                _page_not_found_component__WEBPACK_IMPORTED_MODULE_10__["PageNotFoundComponent"],
+                _dovesiamo_dovesiamo_component__WEBPACK_IMPORTED_MODULE_8__["DovesiamoComponent"],
+                _articoli_articoli_component__WEBPACK_IMPORTED_MODULE_9__["ArticoliComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(_app_routes__WEBPACK_IMPORTED_MODULE_10__["appRoutes"], { useHash: true }),
-                _agm_core__WEBPACK_IMPORTED_MODULE_11__["AgmCoreModule"].forRoot({
+                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(_app_routes__WEBPACK_IMPORTED_MODULE_11__["appRoutes"], { useHash: true }),
+                _agm_core__WEBPACK_IMPORTED_MODULE_12__["AgmCoreModule"].forRoot({
                     apiKey: 'AIzaSyBzjPkh-Cfv1BrLIbqsOe_f3pbSsZuZ9U8'
                 }),
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"]
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"]
             ],
-            providers: [_services_orari_service__WEBPACK_IMPORTED_MODULE_12__["OrariService"]],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+            providers: [_services_orari_service__WEBPACK_IMPORTED_MODULE_13__["OrariService"], _services_articoli_service__WEBPACK_IMPORTED_MODULE_14__["ArticoliService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -182,7 +187,7 @@ var appRoutes = [
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6 main-title\">\r\n                <h1>{{ title }}</h1>\r\n                \r\n\r\n                \r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>"
+module.exports = "<section>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6 main-title\">\r\n                <h1>{{ title }}</h1>\r\n\r\n                <div class=\"form-group\">\r\n                    <label for=\"filtroArticoli\">Cerca</label>\r\n                    <input type=\"text\" class=\"form-control\" id=\"filtroArticoli\"\r\n                        placeholder=\"Codice o descrizione articolo\" [(ngModel)]=\"textValue\" name=\"filtro\">\r\n                </div>\r\n\r\n\r\n                <table class=\"table table-striped table-dark\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th scope=\"col\">Codice</th>\r\n                            <th scope=\"col\">Descrizione</th>\r\n                            <th scope=\"col\">Giacenza</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let item of articoli\">\r\n                            <td>{{item.codice}}</td>\r\n                            <td>{{item.descrizione}}</td>\r\n                            <td>{{item.giacenza}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>"
 
 /***/ }),
 
@@ -198,12 +203,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticoliComponent", function() { return ArticoliComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_articoli_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/articoli.service */ "./src/app/services/articoli.service.ts");
+
 
 
 var ArticoliComponent = /** @class */ (function () {
-    function ArticoliComponent() {
+    function ArticoliComponent(articoliService) {
+        this.articoliService = articoliService;
         this.title = 'Articoli';
+        this.textValue = '';
     }
+    Object.defineProperty(ArticoliComponent.prototype, "articoli", {
+        get: function () {
+            var list = this.articoliService.getArticoli();
+            if (this.textValue) {
+                var str_1 = this.textValue.toLowerCase();
+                list = list.filter(function (a) { return a.codice.toLowerCase().includes(str_1) || a.descrizione.toLowerCase().includes(str_1); });
+            }
+            return list;
+        },
+        enumerable: true,
+        configurable: true
+    });
     ArticoliComponent.prototype.ngOnInit = function () {
     };
     ArticoliComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -211,7 +232,7 @@ var ArticoliComponent = /** @class */ (function () {
             selector: 'app-articoli',
             template: __webpack_require__(/*! ./articoli.component.html */ "./src/app/articoli/articoli.component.html")
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_articoli_service__WEBPACK_IMPORTED_MODULE_2__["ArticoliService"]])
     ], ArticoliComponent);
     return ArticoliComponent;
 }());
@@ -364,6 +385,47 @@ var PageNotFoundComponent = /** @class */ (function () {
         })
     ], PageNotFoundComponent);
     return PageNotFoundComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/articoli.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/articoli.service.ts ***!
+  \**********************************************/
+/*! exports provided: ArticoliService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticoliService", function() { return ArticoliService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+var ArticoliService = /** @class */ (function () {
+    function ArticoliService(httpService) {
+        var _this = this;
+        this.httpService = httpService;
+        this.articoli = [];
+        this.httpService.get('./assets/giacenza.json').subscribe(function (data) {
+            _this.articoli = data; // FILL THE ARRAY WITH DATA.
+        }, function (err) {
+            console.log(err.message);
+        });
+    }
+    ArticoliService.prototype.getArticoli = function () {
+        return this.articoli;
+    };
+    ArticoliService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], ArticoliService);
+    return ArticoliService;
 }());
 
 
