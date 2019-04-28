@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\nbody {\n    background: url('esterno_cvs.jpg') no-repeat center center fixed;\n    background-size: cover;\n    -o-background-size: cover;\n  }\n.main-title {\n    color: #92a8d1;\n  }\n  \n \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLCtFQUErRTtBQUMvRTtJQUNJLGlFQUF3RTtJQUd4RSx1QkFBdUI7SUFDdkIsMEJBQTBCO0dBQzNCO0FBRUQ7SUFDRSxlQUFlO0dBQ2hCIiwiZmlsZSI6InNyYy9zdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xuYm9keSB7XG4gICAgYmFja2dyb3VuZDogdXJsKCdhc3NldHMvZXN0ZXJub19jdnMuanBnJykgbm8tcmVwZWF0IGNlbnRlciBjZW50ZXIgZml4ZWQ7XG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIC1tb3otYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICAgIC1vLWJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIH1cbiAgXG4gIC5tYWluLXRpdGxlIHtcbiAgICBjb2xvcjogIzkyYThkMTtcbiAgfVxuICBcbiAiXX0= */", '', '']]
+module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\r\nbody {\r\n    background: url('esterno_cvs.jpg') no-repeat center center fixed;\r\n    background-size: cover;\r\n    -o-background-size: cover;\r\n  }\r\n.main-title {\r\n    color: #92a8d1;\r\n  }\r\n  \r\n \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9zdHlsZXMuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLCtFQUErRTtBQUMvRTtJQUNJLGlFQUF3RTtJQUd4RSx1QkFBdUI7SUFDdkIsMEJBQTBCO0dBQzNCO0FBRUQ7SUFDRSxlQUFlO0dBQ2hCIiwiZmlsZSI6InNyYy9zdHlsZXMuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xyXG5ib2R5IHtcclxuICAgIGJhY2tncm91bmQ6IHVybCgnYXNzZXRzL2VzdGVybm9fY3ZzLmpwZycpIG5vLXJlcGVhdCBjZW50ZXIgY2VudGVyIGZpeGVkO1xyXG4gICAgLXdlYmtpdC1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG4gICAgLW1vei1iYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICAgIC1vLWJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbiAgfVxyXG4gIFxyXG4gIC5tYWluLXRpdGxlIHtcclxuICAgIGNvbG9yOiAjOTJhOGQxO1xyXG4gIH1cclxuICBcclxuICJdfQ== */", '', '']]
 
 /***/ }),
 
@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Repository\CVSBelluno\Web\bacheca\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! D:\Repository\CVSBelluno\Web\cvsbelluno\src\styles.css */"./src/styles.css");
 
 
 /***/ })

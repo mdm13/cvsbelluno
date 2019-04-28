@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Navigation -->\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom\">\n  <div class=\"container\">\n    <a class=\"navbar-brand\" href=\"http://www.cvsonline.it/\">Cooperativa Veneta Scout</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\"\n      aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n      <ul class=\"navbar-nav ml-auto\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/home\" routerLinkActive=\"active\">Home\n            <span class=\"sr-only\">(current)</span>\n          </a>\n        </li>\n\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/dovesiamo\" routerLinkActive=\"active\">Dove Siamo</a>\n        </li>\n\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" routerLink=\"/articoli\" routerLinkActive=\"active\">Articoli</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>\n\n\n<!-- Page Content -->\n<router-outlet></router-outlet>"
+module.exports = "<!-- Navigation -->\r\n<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom\">\r\n  <div class=\"container\">\r\n    <a class=\"navbar-brand\" href=\"http://www.cvsonline.it/\">Cooperativa Veneta Scout</a>\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\"\r\n      aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n\r\n    <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n      <ul class=\"navbar-nav ml-auto\">\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/home\" routerLinkActive=\"active\">Home\r\n            <span class=\"sr-only\">(current)</span>\r\n          </a>\r\n        </li>\r\n\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/dovesiamo\" routerLinkActive=\"active\">Dove Siamo</a>\r\n        </li>\r\n\r\n        <li class=\"nav-item\">\r\n          <a class=\"nav-link\" routerLink=\"/articoli\" routerLinkActive=\"active\">Articoli</a>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n</nav>\r\n\r\n\r\n<!-- Page Content -->\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
@@ -308,7 +308,7 @@ var DovesiamoComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6 main-title\">\r\n                <h1 class=\"mt-5\">Cooperativa Veneta Scout</h1>\r\n                <p> Punto di Distribuzione Zona Belluno<br />\r\n                    presso lo <a href=\" https://www.spazioex.com/\">Spazio EX – Ex Caserma Piave</a><br />\r\n                    Via Tiziano Vecellio, 82/E<br />\r\n                    ​32100 ​Belluno (BL)<br />\r\n                    <p class=\"font-italic\">​di fronte a Kiwisport </p>\r\n                    <p> Aperto il sabato dalle 15:00 alle 18:00</p>\r\n                    <p> Prossime aperture:</p>\r\n                    <table class=\"table table-striped table-dark\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th scope=\"col\">Data</th>\r\n                                <th scope=\"col\">Orario</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let item of dateApertura\">\r\n                                <td>{{item.data | date: 'yyyy-MM-dd'}}</td>\r\n                                <td *ngIf=\"item.orario\" [ngClass]=\"item.style\">{{item.orario}}</td>\r\n                                <td *ngIf=\"!item.orario\" class=\"bg-danger\">Chiuso</td>\r\n                            </tr>\r\n                        </tbody>\r\n                    </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>"
+module.exports = "<section>\r\n    <div class=\"container\">\r\n        <div class=\"row\">\r\n            <div class=\"col-lg-6 main-title\">\r\n                <h1 class=\"mt-5\">Cooperativa Veneta Scout</h1>\r\n                <p> Punto di Distribuzione Zona Belluno<br />\r\n                    presso lo <a href=\" https://www.spazioex.com/\">Spazio EX – Ex Caserma Piave</a><br />\r\n                    Via Tiziano Vecellio, 82/E<br />\r\n                    ​32100 ​Belluno (BL)<br />\r\n                    <p class=\"font-italic\">​di fronte a Kiwisport </p>\r\n                    <p> Aperto il sabato dalle 15:30 alle 18:30</p>\r\n                    <p> Prossime aperture:</p>\r\n                    <table class=\"table table-striped table-dark\">\r\n                        <thead>\r\n                            <tr>\r\n                                <th scope=\"col\">Data</th>\r\n                                <th scope=\"col\">Orario</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let item of dateApertura\">\r\n                                <td>{{item.data | date: 'yyyy-MM-dd'}}</td>\r\n                                <td *ngIf=\"item.orario\" [ngClass]=\"item.style\">{{item.orario}}</td>\r\n                                <td *ngIf=\"!item.orario\" class=\"bg-danger\">Chiuso</td>\r\n                            </tr>\r\n                        </tbody>\r\n                    </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</section>"
 
 /***/ }),
 
@@ -453,7 +453,7 @@ var OrariService = /** @class */ (function () {
         var _this = this;
         this.httpService = httpService;
         this.startDate = new Date();
-        this.defaultOrario = '15:00-18:00';
+        this.defaultOrario = '15:30-18:30';
         this.dateApertura = [];
         this.dateChiusura = [];
         this.httpService.get('./assets/orari.json').subscribe(function (data) {
@@ -567,7 +567,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Repository\CVSBelluno\Web\bacheca\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\Repository\CVSBelluno\Web\cvsbelluno\src\main.ts */"./src/main.ts");
 
 
 /***/ })
