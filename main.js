@@ -453,7 +453,7 @@ var OrariService = /** @class */ (function () {
         var _this = this;
         this.httpService = httpService;
         this.startDate = new Date();
-        this.defaultOrario = '15:30-18:30';
+        this.defaultOrario = '15:00-18:00';
         this.dateApertura = [];
         this.dateChiusura = [];
         this.httpService.get('./assets/orari.json').subscribe(function (data) {
